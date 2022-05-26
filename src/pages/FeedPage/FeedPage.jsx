@@ -53,13 +53,13 @@ export default function FeedPage({user}) {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <Grid.Column style={{ maxWidth: 450 }}>
+          <Grid.Column style={{ maxWidth: 900 }}>
             <AddPost handleAddPost={handleAddPost}/>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-        <Grid.Column style={{maxWidth: 450}}>
-          <PostFeed posts={posts}  numPhotosCol={1}  />
+        <Grid.Column style={{maxWidth: 900}}>
+          <PostFeed posts={posts}  numPhotosCol={2}  />
         </Grid.Column>
         </Grid.Row>
     </Grid>
