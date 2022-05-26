@@ -4,7 +4,7 @@ import { Card  } from 'semantic-ui-react'
 import PostCard from '../PostCard/PostCard';
 
 
-export default function PostFeed({posts, numPhotosCol }){
+export default function PostFeed({posts, numPhotosCol, user, isProfile }){
 
     return (
         <Card.Group itemsPerRow={numPhotosCol} stackable>
@@ -14,6 +14,8 @@ export default function PostFeed({posts, numPhotosCol }){
                         <PostCard
                             post={post}
                             key={post._id}
+                            isProfile={isProfile}
+                            user={user}
                             />
                     )
                 })}
