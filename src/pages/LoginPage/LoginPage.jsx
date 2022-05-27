@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./LoginPage.css";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import userService from "../../utils/userService";
+import Divider from "../../components/Divider/Divider";
 import { useNavigate, Link } from "react-router-dom";
 import {
   Button,
@@ -44,13 +45,16 @@ export default function LoginPage(props) {
   }
 
   return (
-    <>
+
+    <Grid style={{ height: '100vh', padding: 0, margin: 0 }} verticalAlign='middle'>
+      <Grid.Row style={{ padding: 0, margin: 0 }}>
+      <Divider />
       <Grid
         textAlign="center"
 
         verticalAlign="middle"
       >
-        <Grid.Column style={{ maxWidth: 450 }}>
+        <Grid.Column style={{'padding-left': 250 }}>
           <Header as="h2" color="teal" textAlign="center">
             <Image src="https://i.imgur.com/s4LrnlU.png" /> Log-in to your
             account
@@ -90,6 +94,9 @@ export default function LoginPage(props) {
           {error ? <ErrorMessage error={error} /> : null}
         </Grid.Column>
       </Grid>
-    </>
+      </Grid.Row>
+    </Grid>
+
+
   );
 }

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Eczar:wght@500&family=Lobster&family=Montserrat:wght@600&family=Orbitron&family=Palette+Mosaic&family=Permanent+Marker&family=Poiret+One&family=Press+Start+2P&family=Roboto&family=Tapestry&family=VT323&display=swap');
+
+
+.LandingDivider {
+  height: 100vh;
+  min-height: 500px;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(2,169,244,0.7);
+
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+}

@@ -19,7 +19,7 @@ function PostCard({post, isProfile, addLike, removeLike, user, add}) {
 
   return (
     <>
-    <Card style={{ 'box-shadow': '10px 5px 5px black'}} key={post._id} raised>
+    <Card style={{ 'box-shadow': '10px 5px 5px grey'}} key={post._id} raised>
     {isProfile ? (
       ""
     ) : (

@@ -54,7 +54,8 @@ export default function ProfilePage(props) {
   }
 
   return (
-    <>
+    <div style={{
+      backgroundColor: 'rgba(2,169,244,0.7'}}>
       <Grid centered >
         <Grid.Row>
           <Grid.Column>
@@ -68,10 +69,10 @@ export default function ProfilePage(props) {
         </Grid.Row>
         <Grid.Row>
         <Grid.Column style={{maxWidth: 900}}>
-          <PostFeed numPhotosCol={3} user={props.user} posts={posts} isProfile={true}/>
+          <PostFeed numPhotosCol={2} user={props.user} posts={posts} isProfile={true}/>
         </Grid.Column>
         </Grid.Row>
     </Grid>
-    </>
+    </div>
   )
 }

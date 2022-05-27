@@ -3,6 +3,7 @@ import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import { Button, Form, Grid, Header, Image, Segment } from 'semantic-ui-react'
 import userService from "../../utils/userService";
 import { useNavigate } from "react-router-dom";
+import Divider from "../../components/Divider/Divider";
 
 export default function SignUpPage(props) {
 
@@ -68,8 +69,15 @@ export default function SignUpPage(props) {
 
 
   return (
-    <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
-      <Grid.Column style={{ maxWidth: 450 }}>
+    <Grid style={{ height: '100vh', padding: 0, margin: 0 }} verticalAlign='middle'>
+      <Grid.Row style={{ padding: 0, margin: 0 }}>
+      <Divider />
+      <Grid
+        textAlign="center"
+
+        verticalAlign="middle"
+      >
+      <Grid.Column style={{'padding-left': 250 }}>
         <Header as="h2" color="teal" textAlign="center">
           <Image src="https://i.imgur.com/s4LrnlU.png" /> Sign Up
         </Header>
@@ -127,6 +135,8 @@ export default function SignUpPage(props) {
           {error ? <ErrorMessage error={error} /> : null}
         </Form>
       </Grid.Column>
+      </Grid>
+      </Grid.Row>
     </Grid>
   );
 }
