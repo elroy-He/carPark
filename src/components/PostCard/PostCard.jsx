@@ -19,7 +19,7 @@ function PostCard({post, isProfile, addLike, removeLike, user, add}) {
 
   return (
     <>
-    <Card key={post._id} raised>
+    <Card style={{ 'box-shadow': '10px 5px 5px black'}} key={post._id} raised>
     {isProfile ? (
       ""
     ) : (
@@ -41,7 +41,14 @@ function PostCard({post, isProfile, addLike, removeLike, user, add}) {
       </Card.Content>
     )}
 
-
+<Iframe
+      width="420"
+      height="250"
+      frameborder="0"
+      style="border:0"
+      referrerPolicy="no-referrer-when-downgrade"
+      src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBI0EA4b2AFBSQHxvm1jTIUQwPLm3-vNYI&q=${add}`}
+      allowfullscreen />
       <Image src={`${post.photoUrl}`} wrapped ui={false} />
       <Card.Content>
       <Card.Description>
@@ -59,13 +66,7 @@ function PostCard({post, isProfile, addLike, removeLike, user, add}) {
       </Card.Content>
     </Card>
 
-    <Iframe
-      width="450"
-      height="250"
-      frameborder="0" style="border:0"
-      referrerPolicy="no-referrer-when-downgrade"
-      src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBI0EA4b2AFBSQHxvm1jTIUQwPLm3-vNYI&q=${add}`}
-      allowfullscreen />
+
       </>
   );
 }
