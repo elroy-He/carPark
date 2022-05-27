@@ -1,11 +1,16 @@
 
 # car-park
 
-## Should I just uber if they charge then 15$/hr for parking ??
+## Yea Ima just uber there if they charge me 15$/hr for parking ??
 
 A Project by: Elroy He
 
 car-park is a MERN app that helps users keep track of parking lots around them
+
+## User Stories
+  * As a user, I want to add a parking lot
+  * As a user, I want to like other people's posts
+  * As a user, I want see where the parking lot is at
 
 ## Screenshots:
 
