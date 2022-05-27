@@ -1,37 +1,26 @@
-## Setup 
 
-1. Clone the repo
-2. Rename the folder to your Project, you can use the `mv` command like `mv mern-boilerplate yourprojectname`
-3. Delete the `.git` file, when you are in the root of the file, you can press `ls` and you should see a `.git` file, then go ahead and run `rm -rf .git`
+# car-park
 
+## Should I just uber if they charge then 15$/hr for parking ??
 
-#### Setup your git repo
+A Project by: Elroy He
 
-1. go to github and create your github and create a repo (Without a readme or liscense you can add that later!)
-2. Then you can run the following commands in the root of your project 
+car-park is a MERN app that helps users keep track of parking lots around them
 
-```
-git init
-git add .
-git commit -m "first commit"
-git remote add origin git@git.generalassemb.ly:SEI-CC/test.git // this will be whatever your address will be, look at the address in the code github gives you!
-git push -u origin main
-```
+## Screenshots:
 
-#### Setup the App
+![car-park]()
 
-```npm install```
+## Technologies used:
 
-*DOTENV*
+Reactjs, Express, Nodejs, Javascript, HTML, CSS, Heroku, AWS
 
-`touch .env`
+## Getting Started:
 
-add your variables
+-link to deployed app: https://car-parkc.herokuapp.com
+-link to Trello board: https://trello.com/b/D7W3nTy7/mycars
+-link to erd: https://lucid.app/lucidchart/4e756c2d-da88-4a5e-928a-1d2f52dfc62c/edit?from_internal=true
+## Next Steps:
 
-```
-DATABASE_URL=mongodb://localhost:27017/testagramV2
-BUCKET_NAME=catcollectorone
-SECRET=mysecretforjwt
-```
-
-The app is configured, to use those respective key names for the database, jwt secret and aws bucket, of course you'll have your own values
+- Create a page for all my faved posts
+- Follow people
