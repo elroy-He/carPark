@@ -3,7 +3,7 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 import Iframe from 'react-iframe'
 
-function PostCard({post, isProfile, addLike, removeLike, user }) {
+function PostCard({post, isProfile, addLike, removeLike, user, add}) {
   const likeIndex = post.likes.findIndex(
     (like) => like.username === user.username
   );
@@ -63,8 +63,8 @@ function PostCard({post, isProfile, addLike, removeLike, user }) {
       width="450"
       height="250"
       frameborder="0" style="border:0"
-      //referrerPolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBI0EA4b2AFBSQHxvm1jTIUQwPLm3-vNYI&q=108+balbach+st"
+      referrerPolicy="no-referrer-when-downgrade"
+      src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBI0EA4b2AFBSQHxvm1jTIUQwPLm3-vNYI&q=${add}`}
       allowfullscreen />
       </>
   );

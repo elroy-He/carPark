@@ -10,6 +10,7 @@ export default function PostFeed({posts, numPhotosCol, user, isProfile, addLike,
         <Card.Group itemsPerRow={numPhotosCol} stackable>
 
         {posts.map((post) => {
+            const add = post.address.split(' ').join('+');
           return (
             <PostCard
               post={post}
@@ -18,6 +19,7 @@ export default function PostFeed({posts, numPhotosCol, user, isProfile, addLike,
               user={user}
               addLike={addLike}
               removeLike={removeLike}
+              add={add}
             />
           );
         })}
