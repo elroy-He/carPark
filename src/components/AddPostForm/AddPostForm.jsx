@@ -44,7 +44,7 @@ export default function AddPostForm(props){
                   className="form-control"
                   name="description"
                   value={state.description}
-                  placeholder="How was your experience"
+                  placeholder="Price & Experience"
                   onChange={handleChange}
                   required
               />

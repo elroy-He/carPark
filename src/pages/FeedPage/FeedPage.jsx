@@ -73,7 +73,7 @@ export default function FeedPage({user, handleLogout}) {
 
   return(
     < div style={{
-      backgroundColor: 'rgba(2,169,244,0.7'}}>
+      backgroundColor: 'rgba(30,30,30,0.9'}}>
       <Grid centered >
         <Grid.Row>
           <Grid.Column>

@@ -25,3 +25,4 @@ Reactjs, Express, Nodejs, Javascript, HTML, CSS, Heroku, AWS
 
   * Create a page for all my faved posts
   * Follow people
+  * Search Bar !
