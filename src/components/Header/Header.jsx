@@ -27,7 +27,7 @@ export default function PageHeader({ user, handleLogout }) {
         </Link>
         <Dropdown item>
                     <Dropdown.Menu>
-                        <Dropdown.Item><Link to='/' className="drop-link">Feed</Link></Dropdown.Item>
+                        <Dropdown.Item><Link to='/' className="drop-link">Home</Link></Dropdown.Item>
                         <Dropdown.Item><Link to='' onClick={handleLogout} className="drop-link">Logout</Link></Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>

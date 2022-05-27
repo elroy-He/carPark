@@ -38,7 +38,7 @@ export default function AddPostForm(props){
       <Grid.Column style={{ maxWidth: 450 }}>
         <Segment>
 
-            <Form  autoComplete="off" onSubmit={handleSubmit}>
+            <Form  autoComplete="off" onSubmit={handleSubmit} style={{ 'box-shadow': '10px 5px 5px grey'}}>
 
               <Form.Input
                   className="form-control"
