@@ -16,6 +16,9 @@ car-park is a MERN app that helps users keep track of parking lots around them
 
 ![Screen Shot](/public/sc2.png)
 ![Screen Shot](/public/sc1.png)
+![Screen Shot](/public/wf1.jpg)
+![Screen Shot](/public/wf2.jpg)
+![Screen Shot](/public/erd.png)
 
 ## Technologies used:
 
