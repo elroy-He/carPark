@@ -7,7 +7,7 @@ import * as postsAPI from '../../utils/postApi';
 import * as likesAPI from '../../utils/likeApi';
 import {  Grid } from 'semantic-ui-react';
 
-export default function FeedPage({user}) {
+export default function FeedPage({user, handleLogout}) {
 
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true);
@@ -65,7 +65,7 @@ export default function FeedPage({user}) {
   if (error) {
     return (
       <>
-        <PageHeader user={user}/>
+        <PageHeader handleLogout={handleLogout} user={user}/>
         <ErrorMessage error={error} />;
       </>
     );
@@ -76,7 +76,7 @@ export default function FeedPage({user}) {
       <Grid centered >
         <Grid.Row>
           <Grid.Column>
-            <PageHeader/>
+            <PageHeader handleLogout={handleLogout} user={user}/>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>

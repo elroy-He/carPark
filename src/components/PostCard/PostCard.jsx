@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
+import Iframe from 'react-iframe'
 
 function PostCard({post, isProfile, addLike, removeLike, user }) {
   const likeIndex = post.likes.findIndex(
@@ -17,6 +18,7 @@ function PostCard({post, isProfile, addLike, removeLike, user }) {
   const likeColor = likeIndex > -1 ? "red" : "grey";
 
   return (
+    <>
     <Card key={post._id} raised>
     {isProfile ? (
       ""
@@ -51,11 +53,20 @@ function PostCard({post, isProfile, addLike, removeLike, user }) {
       </Card.Content>
       <Card.Content extra textAlign={'right'}>
         <Icon name={'heart'} size='large' color={likeColor}
-          onClick={clickHandler} />
+        onClick={clickHandler} />
         {post.likes.length} Likes
 
       </Card.Content>
     </Card>
+
+    <Iframe
+      width="450"
+      height="250"
+      frameborder="0" style="border:0"
+      //referrerPolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBI0EA4b2AFBSQHxvm1jTIUQwPLm3-vNYI&q=108+balbach+st"
+      allowfullscreen />
+      </>
   );
 }
 

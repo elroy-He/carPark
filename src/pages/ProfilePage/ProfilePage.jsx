@@ -63,7 +63,7 @@ export default function ProfilePage(props) {
         </Grid.Row>
         <Grid.Row>
         <Grid.Column>
-            <ProfileBio user={user}/>
+            <ProfileBio user={props.user}/>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>

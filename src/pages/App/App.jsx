@@ -23,7 +23,7 @@ function App() {
       <Routes>
          <Route
         path="/"
-        element={<FeedPage user={user} />}
+        element={<FeedPage user={user} handleLogout={handleLogout}/>}
       />
         <Route
           path="/login"
@@ -35,7 +35,7 @@ function App() {
         />
         <Route
           path="/:username"
-          element={<ProfilePage handleSignUpOrLogin={handleSignUpOrLogin} />}
+          element={<ProfilePage handleLogout={handleLogout} user={user}/>}
         />
       </Routes>
     );
@@ -43,10 +43,6 @@ function App() {
 
   return (
     <Routes>
-      <Route
-       path="/"
-       element={<FeedPage user={user} handleLogout={handleLogout} />}
-     />
       <Route
         path="/login"
         element={<LoginPage handleSignUpOrLogin={handleSignUpOrLogin} />}
