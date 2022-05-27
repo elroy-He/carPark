@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Header, Segment, Image, Icon } from "semantic-ui-react";
+import { Header, Segment, Image, Icon, Dropdown } from "semantic-ui-react";
 
 export default function PageHeader({ user, handleLogout }) {
     console.log(user, 'user in header')
@@ -25,6 +25,12 @@ export default function PageHeader({ user, handleLogout }) {
             avatar
           ></Image>
         </Link>
+        <Dropdown item>
+                    <Dropdown.Menu>
+                        <Dropdown.Item><Link to='/' className="drop-link">Feed</Link></Dropdown.Item>
+                        <Dropdown.Item><Link to='' onClick={handleLogout} className="drop-link">Logout</Link></Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
       </Header>
     </Segment>
   );
